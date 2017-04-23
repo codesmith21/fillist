@@ -1,0 +1,35 @@
+<div class="jumbotron" style="padding: 0px; min-height: 85vh;">
+	<div class="col-md-6">
+		<form id="save-inst-pos">
+			<div class="form-group">
+				<label for="instId">Enter line text</label>
+				<textarea type="text" class="form-control" rows="4" id="line" placeholder="Enter line" ng-model="form1.lineText">
+				</textarea>
+			</div>
+			<button type="submit" class="btn btn-default btn-primary" ng-click="saveLineData()">Submit</button>
+			<br><br><br>
+			<div id="save-inst-pos-resp" ng-show="saveResponse.status">
+				<strong>Response:</strong>
+				<div ng-bind="saveResponse.message" style="color: green" ng-show="saveResponse.status === 'OK'"></div>
+				<div ng-bind="saveResponse.message" style="color: red" ng-show="saveResponse.status === 'ERROR'"></div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<form id="save-file">
+			<div class="form-group">
+				<label for="loadfile">Select file</label>
+				<input type="file" class="form-control" id="file" placeholder="Upload a file" file-model="file">
+			</div>
+			<button type="submit" class="btn btn-default btn-primary" ng-click="saveFile()">Submit</button>
+			<br><br><br>
+			<div id="save-file-resp" ng-show="saveResponse2">
+				<strong>Response:</strong>
+				<div>Message: {{saveResponse2.message}}</div>
+				<div ng-show="saveResponse2.message === 'Success'">Instruments inserted: {{saveResponse2.rowsInserted}}</div>
+				<div ng-show="saveResponse2.message === 'Success'">Instruments updated: {{saveResponse2.rowsUpdated}}</div>
+			</div>
+		</form>
+	</div>
+	<div class="clearfix"></div>
+</div>

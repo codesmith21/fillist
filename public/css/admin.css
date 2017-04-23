@@ -1,0 +1,42 @@
+#save-inst-pos {
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    margin: 40px;
+    border: 1px grey dashed;
+}
+#save-inst-pos .form-group {    
+    margin-left: 10%;
+}
+#line {
+    max-width: 90%;
+}
+#save-inst-pos button {
+    width: 80%;
+    margin-left: 10%;
+}
+#save-inst-pos-resp {
+    width: 80%;
+    margin-left: 10%;
+}
+#save-file {
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    margin: 40px;
+    border: 1px grey dashed;
+}
+#save-file .form-group {    
+    margin-left: 10%;
+}
+#save-file .form-group input {    
+    width: 90%;
+}
+#save-file button {
+    width: 80%;
+    margin-left: 10%;
+}
+#save-file-resp {
+    width: 80%;
+    margin-left: 10%;
+}
